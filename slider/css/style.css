@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.slider{
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .next, .slider .prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.slider .next{
+    right: 15px;
+}
+
+.slider .prev{
+    left: 15px;
+}
+
+
+.slider li{
+    list-style: none;
+}
+
+.slider ul{
+    display: flex;
+    position: relative;
+    transition:all 1s;
+    left: 0;
+}
+
+.slider ul  img{
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+
+}
